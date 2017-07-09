@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Is_it_Prime_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is It Prime?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edo-aX-XcY">
+                                <rect key="frame" x="126" y="35" width="123" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="W0d-hh-eJ5"/>
+                                    <constraint firstAttribute="width" constant="123" id="bnW-AG-176"/>
+                                    <constraint firstAttribute="height" constant="43" id="jSE-Ee-hA8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="123" id="wlD-6T-vjh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number...." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1je-AU-RqH">
+                                <rect key="frame" x="16" y="104" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Zuk-TJ-3vm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mh6-bg-ZdP">
+                                <rect key="frame" x="137.5" y="177" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WIV-1c-Xmn"/>
+                                    <constraint firstAttribute="width" constant="100" id="pyz-D9-eGV"/>
+                                </constraints>
+                                <state key="normal" title="Is it Prime"/>
+                                <connections>
+                                    <action selector="IsitPrime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pgl-xH-h2H"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htb-Q5-l3I">
+                                <rect key="frame" x="16" y="243" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="FIp-XH-LOo"/>
+                                    <constraint firstAttribute="height" constant="21" id="tyQ-P8-1rj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="htb-Q5-l3I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5pX-Iv-Y6S"/>
+                            <constraint firstItem="htb-Q5-l3I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CDL-7Z-Vxe"/>
+                            <constraint firstItem="1je-AU-RqH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="N4w-xv-lgb"/>
+                            <constraint firstItem="1je-AU-RqH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="O9T-Tm-alB"/>
+                            <constraint firstItem="edo-aX-XcY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="UDx-jf-mNT"/>
+                            <constraint firstItem="htb-Q5-l3I" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aM1-uJ-pdx"/>
+                            <constraint firstItem="edo-aX-XcY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eWQ-X2-q72"/>
+                            <constraint firstItem="Mh6-bg-ZdP" firstAttribute="top" secondItem="1je-AU-RqH" secondAttribute="bottom" constant="43" id="fOH-4c-sGL"/>
+                            <constraint firstItem="Mh6-bg-ZdP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gJA-dN-PHF"/>
+                            <constraint firstItem="edo-aX-XcY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hPx-9I-4iQ"/>
+                            <constraint firstItem="htb-Q5-l3I" firstAttribute="top" secondItem="Mh6-bg-ZdP" secondAttribute="bottom" constant="36" id="iXG-2w-vaR"/>
+                            <constraint firstItem="htb-Q5-l3I" firstAttribute="top" secondItem="Mh6-bg-ZdP" secondAttribute="bottom" constant="36" id="kjf-OI-21O"/>
+                            <constraint firstItem="htb-Q5-l3I" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qHL-5T-Dkz"/>
+                            <constraint firstItem="1je-AU-RqH" firstAttribute="top" secondItem="edo-aX-XcY" secondAttribute="bottom" constant="26" id="uUR-9G-PwW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberTextField" destination="1je-AU-RqH" id="yk0-a5-BXW"/>
+                        <outlet property="resultLable" destination="htb-Q5-l3I" id="Cvf-Q7-OhY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
